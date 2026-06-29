@@ -1,16 +1,15 @@
-## Hi there 👋
+# DesertLABO Website v3
 
-<!--
-**desertlabo/DesertLABO** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+GitHub Pages用のホームページ一式です。
 
-Here are some ideas to get you started:
+## 構成
+- index.html
+- about.html
+- news.html
+- projects.html
+- contact.html
+- css/style.css
+- images/*
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 更新方法
+画像を差し替える場合は `images` フォルダ内の同名ファイルを置き換えてください。
