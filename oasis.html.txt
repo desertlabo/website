@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OASIS ROAD 〜Journey to Oasis〜 | 歯科衛生士の為の実践型セミナー</title>
+    <style>
+        :root {
+            --primary-color: #2D5E52; /* ディープグリーン */
+            --accent-color: #C5A059;  /* ゴールド/サンド */
+            --bg-base: #FAF8F5;       /* やわらかいベージュ */
+            --card-bg: #FFFFFF;
+            --text-color: #333333;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: var(--bg-base);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ヘッダー */
+        header {
+            background: linear-gradient(135deg, #1d3f37 0%, var(--primary-color) 100%);
+            color: #ffffff;
+            text-align: center;
+            padding: 60px 20px 50px;
+        }
+
+        header .sub-title {
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            color: #e2d2b4;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin: 0;
+            letter-spacing: 4px;
+            font-family: Georgia, serif;
+        }
+
+        header .catchphrase {
+            font-size: 1.3rem;
+            margin-top: 25px;
+            font-weight: bold;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -30px auto 60px;
+            background: var(--card-bg);
+            padding: 50px 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .intro-text {
+            text-align: center;
+            font-size: 1.1rem;
+            margin-bottom: 50px;
+        }
+
+        /* コンテンツセクション */
+        h2 {
+            color: var(--primary-color);
+            text-align: center;
+            font-size: 1.6rem;
+            position: relative;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: var(--accent-color);
+            margin: 10px auto 0;
+        }
+
+        /* 3つの特徴 */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .feature-card {
+            background-color: #F4F1EA;
+            border-radius: 8px;
+            padding: 25px 20px;
+            text-align: center;
+            border: 1px solid #E5DFD3;
+        }
+
+        .feature-card h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+            font-size: 1.3rem;
+        }
+
+        .feature-card p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+        }
+
+        /* 開催概要＆対象 */
+        .grid-two-col {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .info-box {
+            background-color: #FAF8F5;
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .info-box h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .info-table th, .info-table td {
+            padding: 10px 0;
+            border-bottom: 1px dashed #E0E0E0;
+            text-align: left;
+        }
+
+        .info-table th {
+            width: 35%;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        /* 講師紹介 */
+        .instructor-notice {
+            background-color: #EBF2F0;
+            color: var(--primary-color);
+            text-align: center;
+            padding: 12px;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-bottom: 25px;
+            font-size: 0.95rem;
+        }
+
+        .instructors-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .instructor-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            border: 1px solid #EAEAEA;
+        }
+
+        .instructor-item .role {
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .instructor-item .name {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin: 5px 0 0;
+        }
+
+        /* CTA（お申し込みボタン） */
+        .cta-section {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #EEEEEE;
+        }
+
+        .btn-apply {
+            display: inline-block;
+            background: linear-gradient(135deg, #d9ab55 0%, var(--accent-color) 100%);
+            color: #ffffff;
+            font-size: 1.25rem;
+            font-weight: bold;
+            padding: 18px 50px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(197, 160, 89, 0.4);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .btn-apply:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(197, 160, 89, 0.6);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.85rem;
+            color: #888888;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+                margin-top: 0;
+            }
+            header h1 {
+                font-size: 2.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="sub-title">歯科衛生士の為の実践型セミナー</div>
+    <h1>OASIS ROAD</h1>
+    <div class="sub-title">〜Journey to Oasis〜</div>
+    <div class="catchphrase">歯科衛生士として歩む地に、<br>確かな道しるべを。</div>
+</header>
+
+<div class="container">
+    <div class="intro-text">
+        臨床の「なぜ？」を理解し、実践につながる。<br>
+        知識・技術・考え方のすべてを、少人数制で丁寧に学びます。
+    </div>
+
+    <h2>セミナー内容</h2>
+    <div class="features-grid">
+        <div class="feature-card">
+            <h3>口腔内写真</h3>
+            <p>診る力を高めるの撮影ポイントと活用法を学ぶ</p>
+        </div>
+        <div class="feature-card">
+            <h3>OHI</h3>
+            <p>患者さんに伝わる指導の考え方と指導</p>
+        </div>
+        <div class="feature-card">
+            <h3>超音波スケーラー</h3>
+            <p>超音波スケーラーの使用方法を実践で学ぶ</p>
+        </div>
+    </div>
+
+    <div class="grid-two-col">
+        <div class="info-box">
+            <h3>対象</h3>
+            <p><strong>歯科衛生士</strong></p>
+            <p style="font-size: 0.95rem;">主に臨床5年未満の歯科衛生士を対象に企画しておりますが、臨床を基礎から学び直したい方や復帰後に臨床への自信を高めたい方など、経験年数を問わずご参加いただけます。</p>
+        </div>
+
+        <div class="info-box">
+            <h3>開催概要</h3>
+            <table class="info-table">
+                <tr>
+                    <th>日時</th>
+                    <td>2026年 11月15日(日)<br>10:00 〜 17:00</td>
+                </tr>
+                <tr>
+                    <th>会場</th>
+                    <td>医療法人つゆくさ歯科医院</td>
+                </tr>
+                <tr>
+                    <th>定員</th>
+                    <td>8名（少人数制）</td>
+                </tr>
+                <tr>
+                    <th>参加費</th>
+                    <td>20,000円（税込）</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <h2>講師紹介</h2>
+    <div class="instructor-notice">
+        講師全員が、日本歯周病学会認定歯科衛生士を取得しています
+    </div>
+    <div class="instructors-list">
+        <div class="instructor-item">
+            <div class="role">メイン講師・主催者</div>
+            <div class="name">内藤 利江</div>
+        </div>
+        <div class="instructor-item">
+            <div class="role">サブ講師</div>
+            <div class="name">宇野 里帆</div>
+        </div>
+        <div class="instructor-item">
+            <div class="role">サポート講師</div>
+            <div class="name">佐々木 紗季</div>
+        </div>
+        <div class="instructor-item">
+            <div class="role">サポート</div>
+            <div class="name">他 日本歯周病学会<br>認定歯科衛生士 一名</div>
+        </div>
+    </div>
+
+    <div class="cta-section">
+        <!-- 以下の href の中に Googleフォーム等のURL を貼り付けてください -->
+        <a href="https://forms.google.com/YOUR_FORM_URL" class="btn-apply" target="_blank" rel="noopener">詳細・お申し込みはこちら</a>
+    </div>
+</div>
+
+<footer>
+    &copy; DesertLABO - 砂漠のDH塾 All Rights Reserved.
+</footer>
+
+</body>
+</html>
