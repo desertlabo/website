@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OASIS ROAD 〜Journey to Oasis〜 | DesertLABO</title>
+    <title>OASIS ROAD セミナー募集要項</title>
     <style>
         :root {
-            --primary-color: #2c5e53;
-            --secondary-color: #588b76;
-            --accent-color: #d99b26;
-            --bg-color: #f7f9f8;
+            --primary-color: #2c5e8a;
+            --secondary-color: #d9a74a;
+            --bg-color: #f8f9fa;
             --text-color: #333333;
-            --light-bg: #ffffff;
-            --border-color: #e0e0e0;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
         }
 
         body {
@@ -21,390 +20,316 @@
             color: var(--text-color);
             background-color: var(--bg-color);
             margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: var(--primary-color);
-            color: #ffffff;
-            text-align: center;
-            padding: 40px 20px;
-        }
-
-        header .subtitle {
-            font-size: 0.95rem;
-            letter-spacing: 2px;
-            color: #d1e3dd;
-            margin-bottom: 5px;
-        }
-
-        header h1 {
-            font-size: 1.8rem;
-            margin: 0;
-            font-weight: 700;
-            letter-spacing: 1px;
+            padding: 20px 10px;
         }
 
         .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
-        }
-
-        section {
-            background-color: var(--light-bg);
-            border-radius: 8px;
-            padding: 25px 30px;
-            margin-bottom: 25px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.04);
-        }
-
-        h2 {
-            font-size: 1.3rem;
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--secondary-color);
-            padding-bottom: 8px;
-            margin-top: 0;
-            margin-bottom: 20px;
-        }
-
-        h3 {
-            font-size: 1.05rem;
-            color: var(--primary-color);
-            margin-top: 25px;
-            margin-bottom: 10px;
-            background-color: #f0f5f3;
-            padding: 6px 12px;
-            border-left: 4px solid var(--secondary-color);
-            border-radius: 0 4px 4px 0;
-        }
-
-        p {
-            margin-top: 0;
-            margin-bottom: 1em;
-        }
-
-        ul, ol {
-            padding-left: 20px;
-            margin-bottom: 1em;
-        }
-
-        li {
-            margin-bottom: 6px;
-        }
-
-        /* 表のスタイル */
-        .info-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 15px;
-        }
-
-        .info-table th, .info-table td {
-            border: 1px solid var(--border-color);
-            padding: 12px;
-            text-align: left;
-            vertical-align: top;
-            font-size: 0.95rem;
-        }
-
-        .info-table th {
-            background-color: #f0f5f3;
-            color: var(--primary-color);
-            width: 25%;
-            font-weight: bold;
-        }
-
-        .info-table td {
-            background-color: #ffffff;
-        }
-
-        .note {
-            font-size: 0.85rem;
-            color: #666666;
-            margin-top: 4px;
-        }
-
-        /* 撮影ルールの強調ボックス */
-        .rule-box {
-            background-color: #fbfbfb;
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            padding: 15px;
-            margin-bottom: 15px;
-        }
-
-        .rule-title {
-            font-weight: bold;
-            color: var(--primary-color);
-            margin-bottom: 8px;
-        }
-
-        /* お申し込みボタン */
-        .btn-container {
-            text-align: center;
-            margin: 30px 0 10px;
-        }
-
-        .btn-apply {
-            display: inline-block;
-            background-color: #2c5e53;
-            color: #ffffff;
-            font-weight: bold;
-            padding: 14px 32px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-size: 1.05rem;
-            cursor: pointer;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .link-text {
-            color: var(--secondary-color);
-            text-decoration: underline;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 0.85rem;
-            color: #777777;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
         }
 
         @media (max-width: 600px) {
             .container {
-                padding: 12px;
+                padding: 20px 15px;
             }
-            section {
-                padding: 18px 15px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            font-size: 1.8rem;
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 12px;
+            margin-top: 0;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            border-left: 5px solid var(--primary-color);
+            padding-left: 10px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            background: #f0f4f8;
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            color: #444;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+
+        dl {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            row-gap: 12px;
+            column-gap: 10px;
+            margin: 0;
+        }
+
+        @media (max-width: 600px) {
+            dl {
+                grid-template-columns: 1fr;
+                row-gap: 4px;
             }
-            .info-table th, .info-table td {
-                display: block;
-                width: 100%;
-                box-sizing: border-box;
+            dt {
+                margin-top: 10px;
             }
-            .info-table th {
-                border-bottom: none;
-                background-color: #e6efe9;
-            }
+        }
+
+        dt {
+            font-weight: bold;
+            color: var(--primary-color);
+            background: #f8fafc;
+            padding: 6px 10px;
+            border-radius: 4px;
+            align-self: start;
+        }
+
+        dd {
+            margin: 0;
+            padding: 6px 0;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+            margin-top: 8px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background-color: #fff9e6;
+            border: 1px solid var(--secondary-color);
+            border-radius: 8px;
+            padding: 15px 20px;
+            margin: 20px 0;
+        }
+
+        .note {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .instagram-link {
+            display: inline-block;
+            margin-top: 8px;
+            color: #d62976;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .instagram-link:hover {
+            text-decoration: underline;
+        }
+
+        .step-list {
+            list-style: none;
+            padding-left: 0;
+            counter-reset: step-counter;
+        }
+
+        .step-list li {
+            position: relative;
+            padding-left: 45px;
+            margin-bottom: 15px;
+        }
+
+        .step-list li::before {
+            counter-increment: step-counter;
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 30px;
+            height: 30px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.95rem;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="subtitle">DesertLABO / 砂漠のDH塾 主催</div>
-        <h1>OASIS ROAD 〜Journey to Oasis〜</h1>
-    </header>
+<div class="container">
+    <h1>📋 OASIS ROAD 募集要項・受講規約</h1>
 
-    <div class="container">
+    <h2>📝 募集要項</h2>
+    <dl>
+        <dt>開催日時</dt>
+        <dd>
+            2026年11月15日（日）10:00〜17:00（予定）<br>
+            <span class="note">※受付開始（開場）：9:45〜<br>
+            ※進行状況により終了時間が前後する場合がございます。</span>
+        </dd>
 
-        <!-- セミナー概要 -->
-        <section>
-            <h2>📖 セミナー概要</h2>
-            <p>「OASIS ROAD ～Journey to Oasis～」は、歯科衛生士が日々の臨床をより深く考え、自信を持って患者さんと向き合えるようになることを目指した実践型セミナーです。</p>
-            <p>本セミナーでは、臨床の軸となる「口腔内写真撮影」「OHI（口腔衛生指導）」および「超音波スケーラー操作」を中心に、基礎から効率的な実践ステップまでを網羅。日本歯周病学会認定歯科衛生士の取得を目指すための明確なロードマップと実践的な技術を提供いたします。</p>
-        </section>
+        <dt>募集期間</dt>
+        <dd>
+            2026年8月9日（日）〜 8月31日（月）23:59まで<br>
+            <span class="note">※事前応募による抽選制となります。</span>
+        </dd>
 
-        <!-- 募集要項 -->
-        <section>
-            <h2>📋 募集要項</h2>
-            <table class="info-table">
-                <tr>
-                    <th>開催日時</th>
-                    <td>
-                        2026年11月15日（日）10:00～17:00（予定）<br>
-                        <span class="note">※受付開始（開場）：9:45～</span><br>
-                        <span class="note">※進行状況により終了時間が前後する場合がございます。</span>
-                    </td>
-                </tr>
-                <tr>
-                    <th>募集期間</th>
-                    <td>
-                        2026年8月9日（日）〜 8月31日（月）23:59まで<br>
-                        <span class="note">※事前応募による抽選制となります。</span>
-                    </td>
-                </tr>
-                <tr>
-                    <th>会場</th>
-                    <td>
-                        医療法人つゆくさ歯科医院（会場協力）<br>
-                        <span class="note">※アクセス・詳細は当選通知メールにてご案内いたします。</span>
-                    </td>
-                </tr>
-                <tr>
-                    <th>定員</th>
-                    <td>8名限定（事前応募による抽選制）</td>
-                </tr>
-                <tr>
-                    <th>受講対象</th>
-                    <td>
-                        歯科衛生士（※要資格）<br>
-                        <strong>【参加エリア制限について】</strong><br>
-                        会場（医療法人つゆくさ歯科医院様）の都合上、会場から半径5km圏内（同診療圏内）にご勤務・ご開業されている方の参加は、原則ご遠慮いただいております。<br>
-                        <span class="note">※該当するかご不安な方は、事前にお気軽にお問い合わせください。</span>
-                    </td>
-                </tr>
-                <tr>
-                    <th>受講料</th>
-                    <td>20,000円（税込） ※昼食代・教材費込み</td>
-                </tr>
-                <tr>
-                    <th>講師</th>
-                    <td>
-                        DesertLABO代表 内藤利江<br>
-                        👉 詳しいプロフィールは <a href="https://www.instagram.com/sabaku_dh_juku" target="_blank" rel="noopener" class="link-text">Instagram（@sabaku_dh_juku）</a> へ
-                    </td>
-                </tr>
-                <tr>
-                    <th>監修協力</th>
-                    <td>小塚 義夫 先生</td>
-                </tr>
-                <tr>
-                    <th>協力アドバイザー</th>
-                    <td>真木 まゆみ 先生</td>
-                </tr>
-                <tr>
-                    <th>服装</th>
-                    <td>
-                        動きやすい私服（パンツスタイル推奨）<br>
-                        <span class="note">※お着替えの必要がない動きやすい服装でお越しください。</span><br>
-                        <span class="note">※実技時に水やペースト等が飛ぶ可能性がございます。気になる方はエプロン等のご持参をお勧めいたします。</span>
-                    </td>
-                </tr>
-                <tr>
-                    <th>持ち物</th>
-                    <td>
-                        ルーペ または ゴーグル（※ゴーグルは当日貸し出しも可能です）<br>
-                        グローブ / マスク / 筆記用具 / エプロン（水ハネ・汚れが気になる方）
-                    </td>
-                </tr>
-                <tr>
-                    <th>昼食</th>
-                    <td>主催者側にて昼食（お弁当等）をご用意しております。</td>
-                </tr>
-            </table>
-        </section>
+        <dt>会場</dt>
+        <dd>
+            医療法人つゆくさ歯科医院（会場協力）<br>
+            <span class="note">※アクセス・詳細は当選通知メールにてご案内いたします。</span>
+        </dd>
 
-        <!-- 受講規約・注意事項 -->
-        <section>
-            <h2>📜 受講規約・注意事項</h2>
+        <dt>定員</dt>
+        <dd>8名限定（事前応募による抽選制）</dd>
 
-            <h3>1. 受講対象・参加制限について</h3>
+        <dt>受講対象</dt>
+        <dd>
+            歯科衛生士（※要資格）<br>
+            <strong>【参加エリア制限について】</strong><br>
+            会場（医療法人つゆくさ歯科医院様）の都合上、会場から半径5km圏内（同診療圏内）にご勤務・ご開業されている方の参加は、原則ご遠慮いただいております。<br>
+            <span class="note">※該当するかご不安な方は、事前にお気軽にお問い合わせください。</span>
+        </dd>
+
+        <dt>受講料</dt>
+        <dd>20,000円（税込）<span class="note">※昼食代・教材費込み</span></dd>
+
+        <dt>講師</dt>
+        <dd>
             <ul>
-                <li>本セミナーは歯科衛生士資格をお持ちの方を対象としております。</li>
-                <li>開催会場（医療法人つゆくさ歯科医院様）をお借りする都合上、会場から半径5km以内（同診療圏内）にご勤務・ご開業されている方のご参加は、原則ご遠慮いただいております。（※判定にご不安な方は、お気軽にお問い合わせください。）</li>
-                <li>同業者様（他セミナー主催者・教育事業者等）の、調査・勧誘目的でのご参加は固くお断りいたします。</li>
+                <li>DesertLABO代表 内藤利江</li>
+                <li>宇野 里帆</li>
+                <li>佐々木 紗貴</li>
+                <li>他 日本歯周病学会認定歯科衛生士 1名</li>
             </ul>
+            👉 講師全員の詳しいプロフィールは 
+            <a href="https://www.instagram.com/sabaku_dh_juku" target="_blank" class="instagram-link">Instagram (@sabaku_dh_juku)</a>
+        </dd>
 
-            <h3>2. お申し込み・お席の確定とお支払い</h3>
+        <dt>監修協力</dt>
+        <dd>小塚 義夫 先生</dd>
+
+        <dt>協力アドバイザー</dt>
+        <dd>真木 まゆみ 先生</dd>
+
+        <dt>服装</dt>
+        <dd>
+            動きやすい私服（パンツスタイル推奨）<br>
+            <span class="note">※お着替えの必要がない動きやすい服装でお越しください。<br>
+            ※実技時に水やペースト等が飛ぶ可能性がございます。気になる方はエプロン等のご持参をお勧めいたします。</span>
+        </dd>
+
+        <dt>持ち物</dt>
+        <dd>
             <ul>
-                <li>お申し込みフォーム送信時点では「抽選枠への応募完了」となります。（お席の確定ではありません）</li>
-                <li>フォーム送信後、2026年9月6日（日）23:59までに、ご入力いただいたメールアドレスへ抽選の当落結果をお送りいたします。</li>
-                <li>当選された方には、お振込先口座および【受講料お振込締切日】をご案内いたします。指定締切日までにお振込みが確認できた時点で、正式なお席の確定（受講確定）となります。</li>
-                <li>締切日までにご入金が確認できない場合は自動キャンセルとなり、キャンセル待ちの方へお席が移行いたしますのでご注意ください。</li>
+                <li>ルーペ または ゴーグル（※ゴーグルは当日貸出しも可能です）</li>
+                <li>グローブ / マスク / 筆記用具 / エプロン（水ハネ・汚れが気になる方）</li>
             </ul>
+        </dd>
 
-            <h3>3. キャンセルポリシー</h3>
-            <p>受講料お振込み後にキャンセルされる場合は、お早めに事務局（<a href="mailto:desertlabo.office@gmail.com" class="link-text">desertlabo.office@gmail.com</a>）までご連絡ください。キャンセル受付日に応じて、以下の通り対応させていただきます。</p>
-            <ul>
-                <li><strong>開催14日前まで（2026年11月1日 23:59まで）：</strong> 受講料から返金手数料（1,000円）を差し引いた金額をご指定口座へ返金いたします。</li>
-                <li><strong>開催13日前以降（2026年11月2日 0:00以降）：</strong> 実習教材・会場準備等の都合上、理由の如何を問わず受講料の返金はいたしかねます。あらかじめご了承ください。</li>
-            </ul>
+        <dt>昼食</dt>
+        <dd>主催者側にて昼食をご用意しております。</dd>
+    </dl>
 
-            <h3>4. 撮影・録音・SNS投稿およびプライバシー管理ルール</h3>
-            <p>受講生の皆様が安心してご参加いただき、かつご自身の学びに集中できるよう、撮影および動画・写真の取り扱いについて以下の通り規定いたします。</p>
-            
-            <div class="rule-box">
-                <div class="rule-title">📷 撮影・録音について</div>
-                <ul>
-                    <li><strong>講義の動画撮影・音声録音：全行程禁止</strong><br>講義内容、スライド画面、解説音声等の動画撮影および録音は固く禁止いたします。</li>
-                    <li><strong>講義スライドの写真撮影：指定時のみ可</strong><br>スライドの写真撮影は、講師が「撮影OK」のアナウンスを行ったタイミングのみ可能となります。</li>
-                    <li><strong>実技の撮影：ご自身の復習用に限り撮影可</strong><br>ご自身の実技指導風景や手技の撮影は可能です。※ただし、復習用個人利用に限ります。</li>
-                </ul>
-            </div>
+    <h2>📜 受講規約・注意事項</h2>
 
-            <div class="rule-box">
-                <div class="rule-title">🚫 第三者への共有・データ配布・流出の禁止</div>
-                <ul>
-                    <li>配布資料・講義テキストのほか、受講者様ご自身が当日撮影された実技動画・写真・音声データ等についても、第三者への譲渡・共有・転送・SNS等でのばら撒き（二次配布）を固く禁止いたします。</li>
-                    <li>配布資料には受講者固有の識別情報を記載する場合がございます。無断流出・共有が発覚した場合は、法的措置を含めた厳正な対応を行います。</li>
-                </ul>
-            </div>
+    <h3>1. 受講対象・参加制限について</h3>
+    <ul>
+        <li>本セミナーは歯科衛生士資格をお持ちの方を対象としております。</li>
+        <li>開催会場（医療法人つゆくさ歯科医院様）をお借りする都合上、会場から半径5km以内（同診療圏内）にご勤務・ご開業されている方のご参加は、原則ご遠慮いただいております。（※判定にご不安な方は、お気軽にお問い合わせください。）</li>
+        <li>同業者様（他セミナー主催者・教育事業者等）の、調査・勧誘目的でのご参加は固くお断りいたします。</li>
+    </ul>
 
-            <div class="rule-box">
-                <div class="rule-title">📱 SNS投稿と他の受講者様のプライバシー保護</div>
-                <ul>
-                    <li>セミナーの感想、実技風景の写真、会場写真等のSNS投稿は大歓迎です！（ハッシュタグ <code>#DesertLABO</code> <code>#砂漠のDH塾</code> <code>#OASISROAD</code> ）</li>
-                    <li><strong>【他受講者の顔出し厳禁】</strong> 他の受講者様や関係者が写っている写真・動画をSNS等に投稿される際は、必ず事前にご本人の許可を得るか、顔が特定できないようモザイク・スタンプ等の加工を行ってください。許可のない無断掲載は固く禁止いたします。</li>
-                    <li>講義スライドや配布資料の中身が鮮明に写った写真・動画の公開は禁止いたします。</li>
-                </ul>
-            </div>
+    <h3>2. お申し込み・お席の確定とお支払い</h3>
+    <ul>
+        <li>お申し込みフォーム送信時点では「抽選枠への応募完了」となります。（お席の確定ではありません）</li>
+        <li>フォーム送信後、2026年9月6日（日）23:59までに、ご入力いただいたメールアドレスへ抽選の当落結果をお送りいたします。</li>
+        <li>当選された方には、お振込先口座および【受講料お振込締切日】をご案内いたします。指定締切日までにお振込みが確認できた時点で、正式なお席の確定（受講確定）となります。</li>
+        <li>締切日までにご入金が確認できない場合は自動キャンセルとなり、キャンセル待ちの方へお席が移行いたしますのでご注意ください。</li>
+        <li><strong>【領収書について】</strong> 当選（ご参加確定）された方へ、受講料のお支払い確認後にPDF形式の電子領収書をメールにて送付いたします。宛名や但し書きにご指定・ご希望がある場合は、お申し込みフォーム内の指定項目にご記入ください。</li>
+    </ul>
 
-            <div class="rule-box">
-                <div class="rule-title">📸 主催者側による記録撮影について</div>
-                <p style="margin-bottom:0;">当日は記録および広報活動（Webサイト・Instagram等）のため、主催者側で撮影を行います。お顔の露出・掲載がNGの方は、お申し込みフォームにて事前にお申し付けください。十分配慮いたします。</p>
-            </div>
-
-            <h3>5. 受講権利・教材の転売禁止＆権利保護</h3>
-            <p>本セミナーの受講権利、配布資料、講義テキスト等を、第三者へ有償で転売すること、オークション・フリマアプリ等に出品・転載すること、ならびに主催者の許可なく第三者へ権利や資料を譲渡・共有することは固く禁止いたします。違反が発覚した場合、お申し込みを無効とし、当日および今後のDesertLABO / 砂漠のDH塾が主催する全イベントへの入場をお断りいたします。（※その際の受講料返金はいたしかねます。）</p>
-
-            <h3>6. 受講生間のトラブルおよび免責事項・禁止事項</h3>
-            <ul>
-                <li><strong>受講生間のトラブル：</strong> セミナー内外を問わず、受講生同士の間で生じたトラブル・損害・不利益（個人情報の交換、SNS上でのやりとり、金銭・プライベートな揉め事等を含む）について、主催者および会場側は一切の責任を負いかねます。当事者間での解決をお願いいたします。</li>
-                <li><strong>迷惑行為・退場規定：</strong> 他の受講生に対する迷惑行為・ハラスメント、営業活動・宗教等の勧誘行為、その他セミナーの円滑な進行を妨げる行為を行われた場合、主催者の判断により即刻退場していただく場合がございます。（※その際の受講料の返金には応じかねます。）</li>
-            </ul>
-        </section>
-
-        <!-- お申し込み -->
-        <section>
-            <h2>📝 お申し込み</h2>
-            <p>上記募集要項および受講規約をご確認の上、下記ボタンよりお進みください。</p>
-            <div class="btn-container">
-                <a href="https://forms.gle/PBuNHesaB2EHukSC9" class="btn-apply" target="_blank" rel="noopener">
-  お申し込みフォームはこちら
-</a>
-            </div>
-            <p style="text-align:center; font-size:0.85rem; color:#666;">※外部サイト（Googleフォーム）へ遷移します</p>
-        </section>
-
-        <!-- お申し込み後の流れ -->
-        <section>
-            <h2>📩 お申し込み後の流れ・メールが届かない場合</h2>
-            <ol>
-                <li>フォーム送信後、2026年9月6日（日）23:59までに、当落結果とお振込先を記載したメールをお送りいたします。</li>
-                <li>当選メールに記載された指定口座へ【締切日まで】に受講料をお振込みいただくことで、お席が正式確定となります。</li>
-            </ol>
-            <p class="note">※9月6日（日）を過ぎてもメールが届かない場合や、診療圏（半径5km以内）に該当するかご不明な場合は、下記のお問い合わせ先までご連絡ください。</p>
-        </section>
-
-        <!-- 主催・会場協力・お問い合わせ -->
-        <section>
-            <h2>🏢 主催・会場協力・お問い合わせ</h2>
-            <table class="info-table">
-                <tr>
-                    <th>主催</th>
-                    <td>DesertLABO / 砂漠のDH塾（代表：内藤利江）</td>
-                </tr>
-                <tr>
-                    <th>会場協力</th>
-                    <td>医療法人つゆくさ歯科医院</td>
-                </tr>
-                <tr>
-                    <th>お問い合わせ</th>
-                    <td>
-                        Mail： <a href="mailto:desertlabo.office@gmail.com" class="link-text">desertlabo.office@gmail.com</a><br>
-                        Instagram： <a href="https://www.instagram.com/sabaku_dh_juku" target="_blank" rel="noopener" class="link-text">@sabaku_dh_juku</a>
-                    </td>
-                </tr>
-            </table>
-        </section>
-
+    <h3>3. 実習体制・学習スタイルについて</h3>
+    <div class="highlight-box">
+        実技講習は、見学を挟みながら効率よく手技を学び取っていただけるグループ編成で行います。
+        <ul>
+            <li><strong>口腔内写真撮影</strong>：4人一組</li>
+            <li><strong>超音波スケーラー</strong>：2人一組</li>
+        </ul>
+        <span class="note">※他者の手技やインストラクターの指導を客観的に見学・観察することで、より理解と学びを深めていただけます。</span>
     </div>
 
+    <h3>4. キャンセルポリシー</h3>
+    <p>受講料お振込み後にキャンセルされる場合は、お早めに事務局（<a href="mailto:desertlabo.office@gmail.com">desertlabo.office@gmail.com</a>）までご連絡ください。キャンセル受付日に応じて、以下の通り対応させていただきます。</p>
+    <ul>
+        <li><strong>開催14日前まで（2026年11月1日 23:59まで）</strong>：受講料から返金手数料（1,000円）を差し引いた金額をご指定口座へ返金いたします。</li>
+        <li><strong>開催13日前以降（2026年11月2日 0:00以降）</strong>：実習教材・会場準備等の都合上、理由の如何を問わず受講料の返金はいたしかねます。あらかじめご了承ください。</li>
+    </ul>
+
+    <h3>5. 撮影・録音・SNS投稿およびプライバシー管理ルール</h3>
+    <p>受講生の皆様が安心してご参加いただき、かつご自身の学びに集中できるよう、撮影および動画・写真の取り扱いについて以下の通り規定いたします。</p>
+    <ul>
+        <li><strong>撮影・録音について</strong>
+            <ul>
+                <li><strong>講義の動画撮影・音声録音：全行程禁止</strong><br>講義内容、スライド画面、解説音声等の動画撮影および録音は固く禁止いたします。</li>
+                <li><strong>講義スライドの写真撮影：指定時のみ可能</strong><br>スライドの写真撮影は、講師が「撮影OK」のアナウンスを行ったタイミングのみ可能となります。</li>
+                <li><strong>実技の撮影：ご自身の復習用に限り撮影可能</strong><br>ご自身の実技指導風景や手技の撮影は可能です。※ただし、復習用個人利用に限ります。</li>
+            </ul>
+        </li>
+        <li><strong>第三者への共有・データ配布・流出の禁止</strong><br>
+            配布資料・講義テキストのほか、受講者様ご自身が当日撮影された実技動画・写真・音声データ等についても、第三者への譲渡・共有・転送・SNS等でのばら撒き（二次配布）を固く禁止いたします。<br>
+            <span class="note">※配布資料には受講者固有の識別情報を記載する場合がございます。無断流出・共有が発覚した場合は、法的措置を含めた厳正な対応を行います。</span>
+        </li>
+        <li><strong>SNS投稿と他の受講者様のプライバシー保護</strong><br>
+            セミナーの感想、実技風景の写真、会場写真等のSNS投稿は大歓迎です！（ハッシュタグ #DesertLABO #砂漠のDH塾 #OASISROAD ）<br>
+            <strong>【他受講者の顔出し厳禁】</strong> 他の受講者様や関係者が写っている写真・動画をSNS等に投稿される際は、必ず事前にご本人の許可を得るか、顔が特定できないようモザイク・スタンプ等の加工を行ってください。許可のない無断掲載は固く禁止いたします。<br>
+            <span class="note">※講義スライドや配布資料の中身が鮮明に写った写真・動画の公開は禁止いたします。</span>
+        </li>
+        <li><strong>主催者側による記録撮影について</strong><br>
+            当日は記録および広報活動（Webサイト・Instagram等）のため、主催者側で撮影を行います。お顔の露出・掲載がNGの方は、お申し込みフォームにて事前にお申し付けください。十分配慮いたします。
+        </li>
+    </ul>
+
+    <h3>6. 受講権利・教材の転売禁止＆権利保護</h3>
+    <p>本セミナーの受講権利、配布資料、講義テキスト等を、第三者へ有償で転売すること、オークション・フリマアプリ等に出品・転載すること、ならびに主催者の許可なく第三者へ権利や資料を譲渡・共有することは固く禁止いたします。違反が発覚した場合、お申し込みを無効とし、当日および今後のDesertLABO / 砂漠のDH塾が主催する全イベントへの入場をお断りいたします。（※その際の受講料返金はいたしかねます。）</p>
+
+    <h3>7. 受講生間のトラブルおよび免責事項・禁止事項</h3>
+    <ul>
+        <li><strong>受講生間のトラブル</strong>：セミナー内外を問わず、受講生同士の間で生じたトラブル・損害・不利益（個人情報の交換、SNS上でのやりとり、金銭・プライベートな揉め事等を含む）について、主催者および会場側は一切の責任を負いかねます。当事者間での解決をお願いいたします。</li>
+        <li><strong>迷惑行為・退場規定</strong>：他の受講生に対する迷惑行為・ハラスメント、営業活動・宗教等の勧誘行為、その他セミナーの円滑な進行を妨げる行為を行われた場合、主催者の判断により即刻退場していただく場合がございます。（※その際の受講料の返金には応じかねます。）</li>
+    </ul>
+
+    <h2>📩 お申し込み後の流れ・メールが届かない場合</h2>
+    <ol class="step-list">
+        <li>フォーム送信後、2026年9月6日（日）23:59までに、当落結果とお振込先を記載したメールをお送りいたします。</li>
+        <li>当選メールに記載された指定口座へ【締切日まで】に受講料をお振込みいただくことで、お席が正式確定となります。</li>
+    </ol>
+    <p class="note">※9月6日（日）を過ぎてもメールが届かない場合や、診療圏（半径5km以内）に該当するかご不明な場合は、下記のお問い合わせ先までご連絡ください。</p>
+
     <footer>
-        &copy; DesertLABO / 砂漠のDH塾 All Rights Reserved.
+        <h2>🏢 主催・会場協力・お問い合わせ</h2>
+        <p>
+            <strong>主催</strong>：DesertLABO / 砂漠のDH塾（代表：内藤利江）<br>
+            <strong>会場協力</strong>：医療法人つゆくさ歯科医院<br>
+            <strong>お問い合わせ</strong>：Mail：<a href="mailto:desertlabo.office@gmail.com">desertlabo.office@gmail.com</a>
+        </p>
     </footer>
+</div>
 
 </body>
-</html
+</html>
